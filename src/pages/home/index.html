@@ -11,17 +11,11 @@
   <!-- Include common header/footer -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.runtime.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="../../js/hello.handlebars.js"></script>
+  <!-- <script src="../../js/hello.handlebars.js"></script> -->
+  <script src="../../js/my.js"></script>
   <script>
-    var context = {
-      title: "My New Post",
-      body: "This is my first post!"
-    };
-    var innerHtml = Handlebars.templates.hello(context);
-    console.log(innerHtml);
-
     $(document).ready(function() {
-      $("#hello-handler").html(innerHtml);
+      $("#hello-handler").html(getInnerHtml());
     });
   </script>
 
