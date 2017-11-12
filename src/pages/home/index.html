@@ -1,0 +1,30 @@
+<html>
+
+<head>
+  <title>World of handlebars</title>
+</head>
+
+<body>
+  <h1>Hello World of Handlebars</h1>
+  <div id="hello-handler" />
+
+  <!-- Include common header/footer -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.runtime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../../js/hello.handlebars.js"></script>
+  <script>
+    var context = {
+      title: "My New Post",
+      body: "This is my first post!"
+    };
+    var innerHtml = Handlebars.templates.hello(context);
+    console.log(innerHtml);
+
+    $(document).ready(function() {
+      $("#hello-handler").html(innerHtml);
+    });
+  </script>
+
+</body>
+
+</html>
