@@ -6,16 +6,20 @@
 
 <body>
   <h1>Hello World of Handlebars</h1>
-  <div id="hello-handler" />
+  <!-- <div id="hello-handler" /> -->
+
+  <p>More to come</p>
+  <div id="ad-banner" />
 
   <!-- Include common header/footer -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.runtime.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- <script src="../../js/hello.handlebars.js"></script> -->
+  <!-- <script src="../../js/banner.handlebars.js"></script> -->
   <script src="../../js/my.js"></script>
   <script>
     $(document).ready(function() {
-      $("#hello-handler").html(getInnerHtml());
+      // $("#hello-handler").html(getInnerHtml());
+      $("#ad-banner").html(getInnerHtmlAdBanner());
     });
   </script>
 
